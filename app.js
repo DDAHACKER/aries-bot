@@ -4,7 +4,7 @@ const ms = require('ms');
 //const moment = require('moment');
 const bot = new Discord.Client();
 const config = require('./config.json');
-let prefix = config.prefix;
+let prefix = '=>';
 bot.on("ready", async() => {
   console.log("I'm online!");
   try{
@@ -22,7 +22,6 @@ bot.on("message", async message => {
   if(message.content.startsWith(prefix)) return;
   try{
     let ops = {
-      prefix:config.prefix,
       modRole:message.member.roles.find("name", "=>")
     }
     let commandFile = require(`./commands/${cmd}.js`);
