@@ -1,0 +1,22 @@
+{
+  "name": "aries-bot",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "DDAHACKER",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^11.3.2",
+    "fs": "0.0.1-security",
+    "ms": "^2.1.1",
+    "parse-ms": "^1.0.1",
+    "quick.db": "^6.3.1",
+    "strict-uri-encode": "^2.0.0",
+    "tar": "^4.4.4",
+    "ytdl-core": "^0.20.4",
+    "ffmpeg-binaries":"^3.2.2-3"
+  }
+}
