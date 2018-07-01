@@ -30,4 +30,4 @@ bot.on("message", async message => {
     console.log(e.stack);
   }
 });
-bot.login(process.env.token);
+bot.login(process.env.TOKEN);
