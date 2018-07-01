@@ -17,7 +17,7 @@ bot.on("ready", async() => {
 bot.on("message", async message => {
   let msg = message.content.toLowerCase();
   let args = message.content.slice(prefix.length).trim().split();
-  let cmd = args.shift.toLowerCase();
+  let cmd = args.shift().toLowerCase();
   if(message.author.bot) return;
   if(msg.startsWith(prefix)) return;
   try{
