@@ -19,7 +19,7 @@ bot.on("message", async message => {
   let args = message.content.slice(prefix.length).trim().split();
   let cmd = args.shift().toLowerCase();
   if(message.author.bot) return;
-  if(msg.startsWith(prefix)) return;
+  if(message.content.startsWith(prefix)) return;
   try{
     let ops = {
       prefix:config.prefix,
@@ -31,4 +31,4 @@ bot.on("message", async message => {
     console.log(e.stack);
   }
 });
-bot.login(process.env.TOKEN);
+bot.login(process.env.token);
